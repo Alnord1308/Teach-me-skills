@@ -1,7 +1,9 @@
 import os
-MyVariable = os.getenv('MyVariable')
-print(MyVariable)
+from dotenv import load_dotenv
 
-items = 1
-sum = 1.6
-order_num = 234
+load_dotenv()
+
+items = os.getenv('ITEMS')
+sum = os.getenv('SUM')
+order_num = os.getenv('ORDER_NUM')
+
